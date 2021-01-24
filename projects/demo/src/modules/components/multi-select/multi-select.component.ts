@@ -2,7 +2,7 @@ import {default as example1Html} from '!!raw-loader!./examples/1/index.html';
 import {default as example1Ts} from '!!raw-loader!./examples/1/index.ts';
 
 import {default as example2Html} from '!!raw-loader!./examples/2/index.html';
-import {default as example2Less} from '!!raw-loader!./examples/2/index.less';
+import {default as example2Scss} from '!!raw-loader!./examples/2/index.scss';
 import {default as example2Ts} from '!!raw-loader!./examples/2/index.ts';
 
 import {default as example3Html} from '!!raw-loader!./examples/3/index.html';
@@ -22,11 +22,11 @@ import {Component, forwardRef, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {
     ALWAYS_FALSE_HANDLER,
-    TUI_DEFAULT_STRINGIFY,
     TuiBooleanHandler,
     TuiContextWithImplicit,
     TuiIdentityMatcher,
     TuiStringHandler,
+    TUI_DEFAULT_STRINGIFY,
 } from '@taiga-ui/cdk';
 import {
     DEFAULT_MAX_HEIGHT,
@@ -53,7 +53,7 @@ class Account {
 @Component({
     selector: 'example-tui-multi-select',
     templateUrl: './multi-select.template.html',
-    styleUrls: ['./multi-select.style.less'],
+    styleUrls: ['./multi-select.style.scss'],
     changeDetection,
     providers: [
         {
@@ -78,7 +78,7 @@ export class ExampleTuiMultiSelectComponent extends AbstractExampleTuiReactiveFi
     readonly example2: FrontEndExample = {
         TypeScript: example2Ts,
         HTML: example2Html,
-        LESS: example2Less,
+        SCSS: example2Scss,
     };
 
     readonly example3: FrontEndExample = {

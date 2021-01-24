@@ -1,5 +1,5 @@
 import {default as example1Ts} from '!!raw-loader!./examples/1/component.ts';
-import {default as example1Less} from '!!raw-loader!./examples/1/style.less';
+import {default as example1Scss} from '!!raw-loader!./examples/1/style.scss';
 import {default as example1Html} from '!!raw-loader!./examples/1/template.html';
 
 import {default as example2Ts} from '!!raw-loader!./examples/2/component.ts';
@@ -16,7 +16,7 @@ import {AbstractExampleTuiReactiveField} from '../abstract/reactive-field';
 @Component({
     selector: 'example-tui-input-inline',
     templateUrl: './input-inline.template.html',
-    styleUrls: ['./input-inline.style.less'],
+    styleUrls: ['./input-inline.style.scss'],
 })
 export class ExampleTuiInputInlineComponent extends AbstractExampleTuiReactiveField {
     readonly exampleImportModule = exampleImportModule;
@@ -25,7 +25,7 @@ export class ExampleTuiInputInlineComponent extends AbstractExampleTuiReactiveFi
     readonly example1: FrontEndExample = {
         TypeScript: example1Ts,
         HTML: example1Html,
-        LESS: example1Less,
+        SCSS: example1Scss,
     };
 
     readonly example2: FrontEndExample = {

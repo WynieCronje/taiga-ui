@@ -1,9 +1,9 @@
 import {default as example1Html} from '!!raw-loader!./examples/1/index.html';
-import {default as example1Less} from '!!raw-loader!./examples/1/index.style.less';
+import {default as example1Scss} from '!!raw-loader!./examples/1/index.style.scss';
 import {default as example1Ts} from '!!raw-loader!./examples/1/index.ts';
 
 import {default as example2Html} from '!!raw-loader!./examples/2/index.html';
-import {default as example2Less} from '!!raw-loader!./examples/2/index.style.less';
+import {default as example2Scss} from '!!raw-loader!./examples/2/index.style.scss';
 import {default as example2Ts} from '!!raw-loader!./examples/2/index.ts';
 
 import {default as example3Html} from '!!raw-loader!./examples/3/index.html';
@@ -23,7 +23,7 @@ import {FrontEndExample} from '../../interfaces/front-end-example';
 @Component({
     selector: 'example-group',
     templateUrl: './group.template.html',
-    styleUrls: ['./group.style.less'],
+    styleUrls: ['./group.style.scss'],
     changeDetection,
 })
 export class ExampleTuiGroupComponent {
@@ -33,13 +33,13 @@ export class ExampleTuiGroupComponent {
     readonly example1: FrontEndExample = {
         TypeScript: example1Ts,
         HTML: example1Html,
-        LESS: example1Less,
+        SCSS: example1Scss,
     };
 
     readonly example2: FrontEndExample = {
         TypeScript: example2Ts,
         HTML: example2Html,
-        LESS: example2Less,
+        SCSS: example2Scss,
     };
 
     readonly example3: FrontEndExample = {

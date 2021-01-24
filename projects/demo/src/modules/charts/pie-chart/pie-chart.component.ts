@@ -1,5 +1,5 @@
 import {default as example1Html} from '!!raw-loader!./examples/1/index.html';
-import {default as example1Less} from '!!raw-loader!./examples/1/index.less';
+import {default as example1Scss} from '!!raw-loader!./examples/1/index.scss';
 import {default as example1Ts} from '!!raw-loader!./examples/1/index.ts';
 
 import {default as example2Html} from '!!raw-loader!./examples/2/index.html';
@@ -8,7 +8,7 @@ import {default as example2Ts} from '!!raw-loader!./examples/2/index.ts';
 import {default as exampleImportModule} from '!!raw-loader!./examples/import/import-module.txt';
 import {default as exampleInsertTemplate} from '!!raw-loader!./examples/import/insert-template.txt';
 import {Component} from '@angular/core';
-import {TUI_DEFAULT_COLOR_HANDLER, TuiColorHandler} from '@taiga-ui/addon-charts';
+import {TuiColorHandler, TUI_DEFAULT_COLOR_HANDLER} from '@taiga-ui/addon-charts';
 import {getCurrencySymbol, TuiCurrency} from '@taiga-ui/addon-commerce';
 import {round, sum, TuiContextWithImplicit} from '@taiga-ui/cdk';
 import {formatNumber, TuiBaseColor, TuiSizeXL, TuiSizeXS} from '@taiga-ui/core';
@@ -22,7 +22,7 @@ const zebraHandler: TuiColorHandler = index =>
 @Component({
     selector: 'example-tui-pie-chart',
     templateUrl: './pie-chart.template.html',
-    styleUrls: ['./pie-chart.style.less'],
+    styleUrls: ['./pie-chart.style.scss'],
     changeDetection,
 })
 export class ExampleTuiPieChartComponent {
@@ -32,7 +32,7 @@ export class ExampleTuiPieChartComponent {
     readonly example1: FrontEndExample = {
         TypeScript: example1Ts,
         HTML: example1Html,
-        LESS: example1Less,
+        SCSS: example1Scss,
     };
 
     readonly example2: FrontEndExample = {

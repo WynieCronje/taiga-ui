@@ -7,10 +7,10 @@ import {default as example3Ts} from '!!raw-loader!./examples/3/index.ts';
 import {default as example4Html} from '!!raw-loader!./examples/4/index.html';
 import {default as example4Ts} from '!!raw-loader!./examples/4/index.ts';
 import {default as example5Html} from '!!raw-loader!./examples/5/index.html';
-import {default as example5Less} from '!!raw-loader!./examples/5/index.less';
+import {default as example5Scss} from '!!raw-loader!./examples/5/index.scss';
 import {default as example5Ts} from '!!raw-loader!./examples/5/index.ts';
 import {default as example6Html} from '!!raw-loader!./examples/6/index.html';
-import {default as example6Less} from '!!raw-loader!./examples/6/index.less';
+import {default as example6Scss} from '!!raw-loader!./examples/6/index.scss';
 import {default as example6Ts} from '!!raw-loader!./examples/6/index.ts';
 import {default as exampleImportModule} from '!!raw-loader!./examples/import/import-module.txt';
 import {default as exampleInsertTemplate} from '!!raw-loader!./examples/import/insert-template.txt';
@@ -49,13 +49,13 @@ export class ExampleTuiTabsComponent {
     readonly example5: FrontEndExample = {
         TypeScript: example5Ts,
         HTML: example5Html,
-        LESS: example5Less,
+        SCSS: example5Scss,
     };
 
     readonly example6: FrontEndExample = {
         TypeScript: example6Ts,
         HTML: example6Html,
-        LESS: example6Less,
+        SCSS: example6Scss,
     };
 
     readonly exampleImportModule = exampleImportModule;

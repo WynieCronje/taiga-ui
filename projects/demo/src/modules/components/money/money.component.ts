@@ -5,7 +5,7 @@ import {default as example2Html} from '!!raw-loader!./examples/2/index.html';
 import {default as example2Ts} from '!!raw-loader!./examples/2/index.ts';
 
 import {default as example3Html} from '!!raw-loader!./examples/3/index.html';
-import {default as example3Less} from '!!raw-loader!./examples/3/index.less';
+import {default as example3Scss} from '!!raw-loader!./examples/3/index.scss';
 import {default as example3Ts} from '!!raw-loader!./examples/3/index.ts';
 
 import {default as example4Html} from '!!raw-loader!./examples/4/index.html';
@@ -47,7 +47,7 @@ export class ExampleTuiMoneyComponent {
     readonly example3: FrontEndExample = {
         TypeScript: example3Ts,
         HTML: example3Html,
-        LESS: example3Less,
+        SCSS: example3Scss,
     };
 
     readonly example4: FrontEndExample = {

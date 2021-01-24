@@ -1,5 +1,5 @@
 import {default as example1Html} from '!!raw-loader!./example/index.html';
-import {default as example1Less} from '!!raw-loader!./example/index.style.less';
+import {default as example1Scss} from '!!raw-loader!./example/index.style.scss';
 import {default as example1Ts} from '!!raw-loader!./example/index.ts';
 
 import {Component} from '@angular/core';
@@ -15,6 +15,6 @@ export class FormComponent {
     readonly example1: FrontEndExample = {
         TypeScript: example1Ts,
         HTML: example1Html,
-        LESS: example1Less,
+        SCSS: example1Scss,
     };
 }

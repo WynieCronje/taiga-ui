@@ -1,0 +1,15 @@
+@import 'taiga-ui-local';
+
+.tui-required {
+    &:after {
+        content: '*';
+    }
+
+    &_float:after {
+        position: absolute;
+    }
+
+    &_spacing:after {
+        content: addBackslash('0000a0*');
+    }
+}

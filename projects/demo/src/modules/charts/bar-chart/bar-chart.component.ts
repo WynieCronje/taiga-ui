@@ -1,11 +1,11 @@
 import {default as example1Html} from '!!raw-loader!./examples/1/index.html';
-import {default as example1Less} from '!!raw-loader!./examples/1/index.less';
+import {default as example1Scss} from '!!raw-loader!./examples/1/index.scss';
 import {default as example1Ts} from '!!raw-loader!./examples/1/index.ts';
 
 import {default as exampleImportModule} from '!!raw-loader!./examples/import/import-module.txt';
 import {default as exampleInsertTemplate} from '!!raw-loader!./examples/import/insert-template.txt';
 import {Component} from '@angular/core';
-import {TUI_DEFAULT_COLOR_HANDLER, TuiColorHandler} from '@taiga-ui/addon-charts';
+import {TuiColorHandler, TUI_DEFAULT_COLOR_HANDLER} from '@taiga-ui/addon-charts';
 import {getCurrencySymbol, TuiCurrency} from '@taiga-ui/addon-commerce';
 import {TuiContextWithImplicit} from '@taiga-ui/cdk';
 import {
@@ -39,7 +39,7 @@ const zebraHandler: TuiColorHandler = index =>
 @Component({
     selector: 'example-tui-bar-chart',
     templateUrl: './bar-chart.template.html',
-    styleUrls: ['./bar-chart.style.less'],
+    styleUrls: ['./bar-chart.style.scss'],
     changeDetection,
 })
 export class ExampleTuiBarChartComponent {
@@ -49,7 +49,7 @@ export class ExampleTuiBarChartComponent {
     readonly example1: FrontEndExample = {
         TypeScript: example1Ts,
         HTML: example1Html,
-        LESS: example1Less,
+        SCSS: example1Scss,
     };
 
     collapsed = false;

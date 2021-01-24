@@ -8,7 +8,7 @@ import {default as example3Html} from '!!raw-loader!./examples/3/index.html';
 import {default as example3Ts} from '!!raw-loader!./examples/3/index.ts';
 
 import {default as example4Html} from '!!raw-loader!./examples/4/index.html';
-import {default as example4Less} from '!!raw-loader!./examples/4/index.less';
+import {default as example4Scss} from '!!raw-loader!./examples/4/index.scss';
 import {default as example4Ts} from '!!raw-loader!./examples/4/index.ts';
 
 import {default as exampleImportModule} from '!!raw-loader!./examples/import/import-module.txt';
@@ -60,7 +60,7 @@ export class ExampleTuiFilterComponent {
     readonly example4: FrontEndExample = {
         TypeScript: example4Ts,
         HTML: example4Html,
-        LESS: example4Less,
+        SCSS: example4Scss,
     };
 
     initialItems = ['Alex Inkin', 'Roman Sedov'];

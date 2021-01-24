@@ -8,23 +8,23 @@ import {default as example3Ts} from '!!raw-loader!./examples/3/component.ts';
 import {default as example3Html} from '!!raw-loader!./examples/3/template.html';
 
 import {default as example4Ts} from '!!raw-loader!./examples/4/component.ts';
-import {default as example4Less} from '!!raw-loader!./examples/4/style.less';
+import {default as example4Scss} from '!!raw-loader!./examples/4/style.scss';
 import {default as example4Html} from '!!raw-loader!./examples/4/template.html';
 
 import {default as example5Ts} from '!!raw-loader!./examples/5/component.ts';
-import {default as example5Less} from '!!raw-loader!./examples/5/style.less';
+import {default as example5Scss} from '!!raw-loader!./examples/5/style.scss';
 import {default as example5Html} from '!!raw-loader!./examples/5/template.html';
 
 import {default as example6Ts} from '!!raw-loader!./examples/6/component.ts';
-import {default as example6Less} from '!!raw-loader!./examples/6/style.less';
+import {default as example6Scss} from '!!raw-loader!./examples/6/style.scss';
 import {default as example6Html} from '!!raw-loader!./examples/6/template.html';
 
 import {default as example7Ts} from '!!raw-loader!./examples/7/component.ts';
-import {default as example7Less} from '!!raw-loader!./examples/7/style.less';
+import {default as example7Scss} from '!!raw-loader!./examples/7/style.scss';
 import {default as example7Html} from '!!raw-loader!./examples/7/template.html';
 
 import {default as example8Html} from '!!raw-loader!./examples/8/index.html';
-import {default as example8Less} from '!!raw-loader!./examples/8/index.less';
+import {default as example8Scss} from '!!raw-loader!./examples/8/index.scss';
 import {default as example8Ts} from '!!raw-loader!./examples/8/index.ts';
 
 import {default as exampleDeclareForm} from '!!raw-loader!./examples/import/declare-form.txt';
@@ -42,7 +42,7 @@ import {AbstractExampleTuiReactiveField} from '../abstract/reactive-field';
 @Component({
     selector: 'example-tui-input',
     templateUrl: './input.template.html',
-    styleUrls: ['./input.style.less'],
+    styleUrls: ['./input.style.scss'],
     changeDetection,
     providers: [
         {
@@ -74,31 +74,31 @@ export class ExampleTuiInputComponent extends AbstractExampleTuiReactiveField {
     readonly example4: FrontEndExample = {
         TypeScript: example4Ts,
         HTML: example4Html,
-        LESS: example4Less,
+        SCSS: example4Scss,
     };
 
     readonly example5: FrontEndExample = {
         TypeScript: example5Ts,
         HTML: example5Html,
-        LESS: example5Less,
+        SCSS: example5Scss,
     };
 
     readonly example6: FrontEndExample = {
         TypeScript: example6Ts,
         HTML: example6Html,
-        LESS: example6Less,
+        SCSS: example6Scss,
     };
 
     readonly example7: FrontEndExample = {
         TypeScript: example7Ts,
         HTML: example7Html,
-        LESS: example7Less,
+        SCSS: example7Scss,
     };
 
     readonly example8: FrontEndExample = {
         TypeScript: example8Ts,
         HTML: example8Html,
-        LESS: example8Less,
+        SCSS: example8Scss,
     };
 
     readonly iconVariants = ['tuiIconSearch', 'tuiIconCalendar'];
