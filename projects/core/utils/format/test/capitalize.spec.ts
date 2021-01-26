@@ -2,19 +2,19 @@ import {CHAR_NO_BREAK_SPACE} from '@taiga-ui/cdk';
 import {capitalize} from '../capitalize';
 
 describe('Capitalize', () => {
-    it('Делает первую букву слова заглавной', () => {
+    it('Capitalizes the first letter of a word', () => {
         expect(capitalize('бэн')).toBe('Бэн');
     });
 
-    it('Делает первую букву каждого слова заглавной', () => {
+    it('Capitalizes the first letter of each word', () => {
         expect(capitalize('папаша торк')).toBe('Папаша Торк');
     });
 
-    it('Делает остальные буквы слова строчными', () => {
+    it('Makes the rest of the word lowercase', () => {
         expect(capitalize('FULL THROTTLE')).toBe('Full Throttle');
     });
 
-    it('Работает для символа неразрывного пробела', () => {
+    it('Works for non-breaking space character', () => {
         expect(
             capitalize(
                 `тяжёлый${CHAR_NO_BREAK_SPACE}запах${CHAR_NO_BREAK_SPACE}асфальта`,
@@ -22,19 +22,19 @@ describe('Capitalize', () => {
         ).toBe(`Тяжёлый${CHAR_NO_BREAK_SPACE}Запах${CHAR_NO_BREAK_SPACE}Асфальта`);
     });
 
-    it('Слово с дефисом не считается за два слова', () => {
+    it('A hyphenated word does not count as two words', () => {
         expect(capitalize('корлей-моторс')).toBe('Корлей-моторс');
     });
 
-    it('Точка внутри слова не разбивает его на два', () => {
+    it(`A dot inside a word doesn't split it in two`, () => {
         expect(capitalize('adrian.ripburger')).toBe('Adrian.ripburger');
     });
 
-    it('Запятая внутри слова не разбивает его на два', () => {
+    it('A comma inside a word does not split it in two', () => {
         expect(capitalize('malcolm,corley')).toBe('Malcolm,corley');
     });
 
-    it('Корректно отрабатывает всякую всячину', () => {
+    it('Correctly fulfills all sorts of things', () => {
         expect(
             capitalize(
                 'Добавь тЕст. где 2 предложения: с!Разными №знаками;препинания, ок?',

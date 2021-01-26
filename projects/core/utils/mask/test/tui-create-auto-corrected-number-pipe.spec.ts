@@ -14,35 +14,35 @@ function wrapper(
     ) as TuiTextMaskPipeResult).value;
 }
 
-describe('tuiCreateAutoCorrectedNumberPipe возвращает', () => {
-    describe('исходную строку, если она', () => {
-        it('пустая', () => {
+describe('tuiCreateAutoCorrectedNumberPipe returns', () => {
+    describe('the original string if it is', () => {
+        it('empty', () => {
             expect(wrapper('')).toBe('');
         });
 
-        it('если в ней нет запятой, и она не нужна (по умолчанию)', () => {
+        it('if there is no comma in it, and it is not needed (by default)', () => {
             expect(wrapper('-123')).toBe('-123');
         });
 
-        it('если дробная часть соответствует формату', () => {
+        it('if the fractional part matches the format', () => {
             expect(wrapper('123,45', 2)).toBe('123,45');
         });
 
-        it('если есть точка и символ разделителя — точка', () => {
+        it('if there is a dot and a separator character is a dot', () => {
             expect(wrapper('123.45', 2, '.')).toBe('123.45');
         });
     });
 
-    describe('исправленную строку, если дробная часть', () => {
-        it('короче заданной', () => {
+    describe('corrected string if fractional part', () => {
+        it('shorter than given', () => {
             expect(wrapper('123,00', 4)).toBe('123,0000');
         });
 
-        it('совсем отсутствует, но нужна', () => {
+        it('completely absent, but needed', () => {
             expect(wrapper('123', 2)).toBe('123,00');
         });
 
-        it('совсем отсутствует, но нужна, с разделителем точкой', () => {
+        it('completely absent, but needed, with a dot separator', () => {
             expect(wrapper('123', 2, '.')).toBe('123.00');
         });
     });

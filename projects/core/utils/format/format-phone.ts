@@ -1,9 +1,9 @@
 /**
- * Форматирует строку с телефоном формата +7XXXXXXXXXX или XXXXXXXXXX, добавляя скобки и дефисы
- * @param value строка для форматирования
- * @param countryCode телефонный код страны
- * @param phoneMask маска телефонного номера
- * @return отформатированная строка телефона вида +7 XXX XXX-XX-XX
+ * Formats a string with a phone format + 7XXXXXXXXXX or XXXXXXXXXX by adding brackets and hyphens
+ * @param value string to format
+ * @param countryCode country dialing code
+ * @param phoneMask phone number mask
+ * @return formatted phone line like +7 XXX XXX-XX-XX
  */
 export function formatPhone(
     value: string,
